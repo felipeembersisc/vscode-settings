@@ -1,85 +1,85 @@
 {
-   "extensions.ignoreRecommendations": true,
-   "security.workspace.trust.untrustedFiles": "open",
-   "javascript.suggest.autoImports": true,
-   "javascript.updateImportsOnFileMove.enabled": "always",
-   "typescript.tsserver.log": "off",
-   "editor.stickyScroll.enabled": false,
-   "workbench.tree.enableStickyScroll": false,
-   "editor.tabSize": 3,
-   "files.associations": {
-      ".env.*": "dotenv",
-      ".prettierrc": "json",
-      "*.css": "css",
-      ".dev.vars": "dotenv"
-   },
-   "tailwindCSS.experimental.classRegex": [
-      [
-         "tv\\(([^)]*)\\)",
-         "[\"'`]([^\"'`]*).*?[\"'`]"
-      ],
-      "class:\\s*?[\"'`]([^\"'`]*).*?,"
-   ],
-   "editor.parameterHints.enabled": false,
-   "editor.renderLineHighlight": "gutter",
-   "typescript.updateImportsOnFileMove.enabled": "always",
-   "editor.suggestSelection": "first",
-   "explorer.confirmDelete": false,
-   "gitlens.codeLens.recentChange.enabled": false,
-   "terminal.integrated.showExitAlert": false,
-   "[prisma]": {
-      "editor.defaultFormatter": "Prisma.prisma"
-   },
-   "typescript.suggest.autoImports": true,
-   "typescript.preferences.preferTypeOnlyAutoImports": true,
-   "terminal.integrated.env.osx": {
-      "FIG_NEW_SESSION": "1"
-   },
-   "workbench.editor.labelFormat": "short",
-   "emmet.includeLanguages": {
-      "javascript": "javascriptreact",
-      "mdx": "javascriptreact"
-   },
-   "emmet.syntaxProfiles": {
-      "javascript": "jsx",
-      "mdx": "jsx"
-   },
-   "editor.acceptSuggestionOnCommitCharacter": false,
-   "explorer.compactFolders": false,
-   "git.enableSmartCommit": true,
-   "editor.accessibilitySupport": "off",
-   "explorer.confirmDragAndDrop": false,
-   "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
-   },
-   "editor.semanticHighlighting.enabled": false,
-   "breadcrumbs.enabled": false,
-   "gitlens.codeLens.authors.enabled": false,
-   "files.exclude": {
-      "**/CVS": true,
-      "**/.DS_Store": true,
-      "**/.hg": true,
-      "**/.svn": true,
-      "**/.git": true,
-      ".vscode": true
-      // "node_modules": true
-   },
-   "[jsonc]": {
-      "editor.defaultFormatter": "vscode.json-language-features"
-   },
-   "[json]": {
-      "editor.defaultFormatter": "vscode.json-language-features"
-   },
-   "window.commandCenter": false,
-   "git.openRepositoryInParentFolders": "always",
-   "editor.formatOnSave": true,
-   "editor.formatOnPaste": true,
-   "security.promptForLocalFileProtocolHandling": false,
-   "window.autoDetectColorScheme": true,
-   "workbench.iconTheme": "symbols",
-   "editor.fontFamily": "Hack",
-   "editor.fontLigatures": true,
-   "editor.cursorSmoothCaretAnimation": "on",
-   "workbench.startupEditor": "none",
-   "workbench.preferredDarkColorTheme": "MacOS Modern Dark - Xcode Modern"
+    "extensions.ignoreRecommendations": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "javascript.suggest.autoImports": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.tsserver.log": "off",
+    "editor.stickyScroll.enabled": false,
+    "workbench.tree.enableStickyScroll": false,
+    "editor.tabSize": 3,
+    "files.associations": {
+        ".env.*": "dotenv",
+        ".prettierrc": "json",
+        "*.css": "css",
+        ".dev.vars": "dotenv"
+    },
+    "tailwindCSS.experimental.classRegex": [
+        [
+            "tv\\(([^)]*)\\)",
+            "[\"'`]([^\"'`]*).*?[\"'`]"
+        ],
+        "class:\\s*?[\"'`]([^\"'`]*).*?,"
+    ],
+    "editor.parameterHints.enabled": false,
+    "editor.renderLineHighlight": "gutter",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.suggestSelection": "first",
+    "explorer.confirmDelete": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "terminal.integrated.showExitAlert": false,
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+    "typescript.suggest.autoImports": true,
+    "typescript.preferences.preferTypeOnlyAutoImports": true,
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "workbench.editor.labelFormat": "short",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "mdx": "javascriptreact"
+    },
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx",
+        "mdx": "jsx"
+    },
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "explorer.compactFolders": false,
+    "git.enableSmartCommit": true,
+    "editor.accessibilitySupport": "off",
+    "explorer.confirmDragAndDrop": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "editor.semanticHighlighting.enabled": false,
+    "breadcrumbs.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "files.exclude": {
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/.git": true,
+        ".vscode": true
+        // "node_modules": true
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "window.commandCenter": false,
+    "git.openRepositoryInParentFolders": "always",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "security.promptForLocalFileProtocolHandling": false,
+    "window.autoDetectColorScheme": true,
+    "workbench.iconTheme": "symbols",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.startupEditor": "none",
+    "workbench.preferredDarkColorTheme": "MacOS Modern Dark - Xcode Modern",
 }
