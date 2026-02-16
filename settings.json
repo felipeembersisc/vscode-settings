@@ -134,7 +134,7 @@
   "editor.cursorStyle": "block",
   "editor.smoothScrolling": true,
   "workbench.navigationControl.enabled": false,
-  "window.commandCenter": false,
+  // "window.commandCenter": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.preferredDarkColorTheme": "Aura Dracula Spirit",
   "workbench.editor.showTabs": "single",
@@ -145,12 +145,14 @@
   "material-icon-theme.hidesExplorerArrows": true,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.tree.indent": 16,
-  "window.titleBarStyle": "native",
+  // "window.titleBarStyle": "native",
   "editor.detectIndentation": false,
   "editor.lineNumbers": "relative",
   "editor.showFoldingControls": "mouseover",
   "editor.guides.indentation": false,
   "editor.renderWhitespace": "none",
   "editor.occurrencesHighlight": "off",
-  "editor.selectionHighlight": false
+  "editor.selectionHighlight": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false
 }
