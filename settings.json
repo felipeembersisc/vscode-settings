@@ -1,79 +1,68 @@
 {
-  // ─── Editor: Font & Appearance ────────────────────────────────────────────
+  // ─── Tema & Ícones ────────────────────────────────────────────────────────
+  "workbench.colorTheme": "One Dark Pro Night Flat",
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
+  "window.autoDetectColorScheme": false,
+
+  // ─── Editor: Fonte & Aparência ────────────────────────────────────────────
   "editor.fontSize": 14,
   "editor.fontFamily": "JetBrains Mono",
-  "editor.fontWeight": "500",
-  "editor.fontLigatures": true,
-  "editor.tabSize": 2,
-  "editor.minimap.enabled": false,
-  // ─── Editor: Cursor & Scrolling ───────────────────────────────────────────
+  "editor.lineHeight": 1.5,
+  "editor.letterSpacing": 0,
+  "editor.fontLigatures": false,
+  "editor.tabSize": 3,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.renderCharacters": false,
+
+  // ─── Editor: Cursor & Rolagem ─────────────────────────────────────────────
   "editor.cursorStyle": "line",
-  "editor.cursorBlinking": "smooth",
+  "editor.cursorWidth": 2,
+  "editor.cursorBlinking": "blink",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "editor.hideCursorInOverviewRuler": true,
-  "editor.renderLineHighlight": "none",
+  "editor.renderLineHighlight": "line",
   "editor.stickyScroll.enabled": false,
-  // ─── Editor: Intellisense & Suggestions ───────────────────────────────────
+
+  // ─── Editor: Guias, colchetes, whitespace (estética LazyVim) ─────────────
+  "editor.guides.indentation": true,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+
+  // ─── Editor: Intellisense & Sugestões ─────────────────────────────────────
   "editor.suggestSelection": "first",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.parameterHints.enabled": false,
   "editor.accessibilitySupport": "off",
   "editor.multiCursorLimit": 50000,
-  // ─── Editor: Formatting & Code Actions ────────────────────────────────────
+
+  // ─── Editor: Formatação & Code Actions ────────────────────────────────────
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "editor.semanticHighlighting.enabled": true,
-  "editor.tokenColorCustomizations": {
-    "textMateRules": []
-  },
-  // ─── Editor: Estética LazyVim (guias, colchetes, whitespace) ─────────────
-  "editor.guides.indentation": true,
-  "editor.guides.bracketPairs": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.renderWhitespace": "boundary",
-  // ─── Vim-style (VSCodeVim) ─────────────────────────────────────────────────
-  "vim.relativenumber": true,
-  "editor.lineNumbers": "relative",
-  "vim.leader": "<space>",
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.view.explorer"
-      ]
-    }
-  ],
-  "keyboard.dispatch": "code",
-  // ─── Workbench: UI ────────────────────────────────────────────────────────
+
+  // ─── Workbench & Janela ───────────────────────────────────────────────────
   "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": true,
+  "workbench.editor.showTabs": "multiple",
   "workbench.editor.labelFormat": "short",
   "workbench.editor.empty.hint": "hidden",
   "workbench.navigationControl.enabled": false,
-  "workbench.tree.enableStickyScroll": false,
-  "workbench.layoutControl.enabled": false,
   "workbench.browser.showInTitleBar": false,
-  "workbench.activityBar.location": "top",
-  "workbench.statusBar.visible": false,
-  "workbench.editor.showTabs": "multiple",
-  "window.commandCenter": false,
+  "workbench.tree.indent": 14,
+  "workbench.tree.enableStickyScroll": false,
   "window.titleBarStyle": "custom",
-  // ─── Workbench: Themes & Icons (Catppuccin) ───────────────────────────────
-  "workbench.iconTheme": "catppuccin-mocha",
-  "workbench.colorTheme": "Catppuccin Mocha",
-  "window.autoDetectColorScheme": false,
-  // ─── Themes: Catppuccin (paridade com LazyVim/catppuccin.nvim) ────────────
-  "catppuccin.italicComments": true,
-  "catppuccin.boldKeywords": false,
-  "catppuccin.italicKeywords": false,
-  // ─── Chat / Agents UI ─────────────────────────────────────────────────────
-  "chat.titleBar.signIn.enabled": false,
-  "chat.titleBar.openInAgentsWindow.enabled": false,
+  "window.commandCenter": false,
+  "window.restoreWindows": "none",
+  "window.confirmSaveUntitledWorkspace": false,
+
   // ─── Explorer ─────────────────────────────────────────────────────────────
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -85,20 +74,8 @@
     ".env.local": ".env*",
     ".env": ".env*"
   },
-  // ─── Terminal ─────────────────────────────────────────────────────────────
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
-  "terminal.integrated.defaultProfile.osx": "fish",
-  "terminal.integrated.gpuAcceleration": "on",
-  "terminal.integrated.showExitAlert": false,
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
-  // ─── Git ──────────────────────────────────────────────────────────────────
-  "git.enableSmartCommit": true,
-  "git.openRepositoryInParentFolders": "always",
-  "diffEditor.ignoreTrimWhitespace": false,
-  // ─── Files ────────────────────────────────────────────────────────────────
+
+  // ─── Arquivos ─────────────────────────────────────────────────────────────
   "files.associations": {
     ".env.*": "dotenv",
     ".dev.vars": "dotenv",
@@ -116,74 +93,70 @@
     ".vscode": true
     // "node_modules": true
   },
-  // ─── Language-specific Formatters ─────────────────────────────────────────
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+
+  // ─── Terminal ─────────────────────────────────────────────────────────────
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
   },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma",
-    "editor.formatOnSave": true
-  },
-  // ─── Emmet ────────────────────────────────────────────────────────────────
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "mdx": "javascriptreact"
-  },
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx",
-    "mdx": "jsx"
-  },
-  // ─── ESLint ───────────────────────────────────────────────────────────────
-  "eslint.validate": [
-    "typescript",
-    "typescriptreact",
-    "javascript",
-    "javascriptreact",
-    "graphql"
-  ],
+
+  // ─── Git ──────────────────────────────────────────────────────────────────
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // ─── Formatadores por linguagem ───────────────────────────────────────────
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "vscode.json-language-features", "editor.formatOnSave": false },
+  "[jsonc]": { "editor.defaultFormatter": "vscode.json-language-features", "editor.formatOnSave": false },
+  "[prisma]": { "editor.defaultFormatter": "Prisma.prisma", "editor.formatOnSave": true },
+
+  // ─── ESLint & Biome ───────────────────────────────────────────────────────
+  "eslint.validate": ["typescript", "typescriptreact", "javascript", "javascriptreact", "graphql"],
+  "biome.suggestInstallingGlobally": false,
+
   // ─── Tailwind CSS ─────────────────────────────────────────────────────────
   "tailwindCSS.experimental.classRegex": [
-    [
-      "tv\\(([^)]*)\\)",
-      "cva\\(([^)]*)\\)",
-      "[\"'`]([^\"'`]*).*?[\"'`]"
-    ],
+    ["tv\\(([^)]*)\\)", "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     "class:\\s*?[\"'`]([^\"'`]*).*?,",
     "tw\\('([^']*)'\\)"
   ],
-  // ─── GitLens ──────────────────────────────────────────────────────────────
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.advanced.messages": {
-    "suppressIntegrationDisconnectedTooManyFailedRequestsWarning": true,
-    "suppressIntegrationRequestTimedOutWarning": true
-  },
+
+  // ─── Emmet ────────────────────────────────────────────────────────────────
+  "emmet.includeLanguages": { "javascript": "javascriptreact", "mdx": "javascriptreact" },
+  "emmet.syntaxProfiles": { "javascript": "jsx", "mdx": "jsx" },
+
   // ─── Prisma ───────────────────────────────────────────────────────────────
   "prisma.hidePrisma6Prompts": true,
-  // ─── Claude Code ──────────────────────────────────────────────────────────
+
+  // ─── Chat & Claude Code ───────────────────────────────────────────────────
+  "chat.titleBar.openInAgentsWindow.enabled": false,
+  "chat.viewSessions.orientation": "stacked",
   "claudeCode.preferredLocation": "panel",
-  // ─── Python ───────────────────────────────────────────────────────────────
-  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
-  // ─── Security & Updates ───────────────────────────────────────────────────
+  "claudeCode.hideOnboarding": true,
+
+  // ─── Segurança, atualizações & extensões ──────────────────────────────────
   "security.workspace.trust.untrustedFiles": "newWindow",
   "security.promptForLocalFileProtocolHandling": false,
   "update.mode": "start",
   "extensions.ignoreRecommendations": true,
-  "claudeCode.hideOnboarding": true,
-  "terminal.integrated.initialHint": false
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://spec.openapis.org/": true,
+    "https://json-schema.org/": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://biomejs.dev": true
+  }
 }
